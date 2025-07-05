@@ -1,17 +1,100 @@
 <!DOCTYPE html>
-<html>  
-    <head>
-        <title>Mobile Applications</title>
-    </head>
-    <body>
-        <p>I am reading mobile applications</p>
-        <h2>Why Mobile Applications Matter</h2>
-        <ul>
-            <li>They connect people globally</li>
-            <li>Enable productivity on the go</li>
-            <li>Offer entertainment and learning</li>
-            <li>Facilitate instant communication</li>
-            <li>Support business and commerce</li>
-        </ul>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearningAppDev</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">LearningAppDev</div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#takeaways">Key Takeaways</a>
+            <a href="#platforms">Builded Platforms</a>
+        </nav>
+        <div class="hamburger" onclick="toggleMobileMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <nav class="mobile-menu" id="mobileMenu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#takeaways">Key Takeaways</a>
+        <a href="#platforms">Builded Platforms</a>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Course Information</h2>
+            <p><strong>Course Number and Name:</strong> PRG 402 Mobile Programming Applications</p>
+            <p><strong>Units:</strong> 3</p>
+            <p><strong>Length of Class:</strong> 8 Weeks</p>
+            <p><strong>Course Description:</strong><br>
+                This course introduces students to mobile application development using JavaScript, jQuery, HTML, and associated client-side tools. Students learn to use these programming tools to develop applications designed for use in mobile environments. Students also use mobile application frameworks and development environments to create web pages that also collect data and interface with a database. The user interface and user experience is also be discussed.
+            </p>
+            <h3>Course Learning Outcomes (CLOs)</h3>
+            <table>
+                <tr>
+                    <th>Outcome</th>
+                    <th>Description</th>
+                    <th>PLOs</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Demonstrate basic programming skills and understanding of Javascript, JQuery, and HTML.</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Explain the importance of UX/UI design in mobile applications</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Describe the requirements gathering process in mobile application design and the importance of user input.</td>
+                    <td>2, 5</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Write program code using client-side tools in Javascript, JQuery, HTML, and CSS.</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Execute the use of mobile application frameworks and development environments that collect data and interface with a database.</td>
+                    <td>3</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>Implementing this learning, I want to make my knowledge strong in mobile app development by practicing real-world projects and continuously exploring UI/UX and JavaScript-based frameworks.</p>
+        </section>
+
+        <section id="takeaways">
+            <h2>Key Takeaways</h2>
+            <ul>
+                <li>Hands-on experience with client-side tools like HTML, CSS, JavaScript, and jQuery.</li>
+                <li>Understanding the development flow of mobile web applications from design to database connectivity.</li>
+                <li>Awareness of best practices in UI/UX for optimal mobile user experience.</li>
+            </ul>
+        </section>
+
+        <section id="platforms">
+            <h2>Builded Platforms</h2>
+            <ul>
+                <li>Simple Task Manager using JavaScript and localStorage.</li>
+                <li>Mobile-first Personal Notes App using HTML, CSS, and jQuery.</li>
+                <li>Feedback Collection Web App integrated with Firebase.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
 </html>
